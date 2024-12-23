@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;    
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: #0000008a;
+    backdrop-filter: blur(8px);
+}
+.logo{
+    
+    border: 1px solid black;
+}
+.logo img{
+    width: 80%;
+}
+
+.menuLinks, .menuButtons{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    width: fit-content;
+    height: fit-content;
+    border: 1px solid black;
+}
+.menuLinks{
+    margin-left: 2%;
+}
+.menuLinks a{
+    color: white;
+    font-family: Roboto;
+    font-size: 15px;
+    text-decoration: none;  
+    opacity: 0.7;
+    transition: 0.4s;
+}
+.menuLinks a:hover{
+    opacity: 1.5;
+    transition: 0.4s;
+}
+
+@font-face{
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+.menuButtons{
+    justify-content: end;
+    margin-right: 2%;
+}
+.buttonIcon{
+    background-color: transparent;
+    border: none;
+    transition: 0.4s;
+}
+.buttonIcon:hover{
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+#buttonLogin{
+    background-color: white;
+    color: black;
+    font-family: Roboto;
+    padding: 5px 8px;
+    border-radius: 5px;
+    font-size: 18px;
+}
