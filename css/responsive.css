@@ -2,15 +2,36 @@
     #OtherMenu{
         display: flex;
     }
-
     .menuLinks{
         display: none;
     }
     .logo{
         display: none;
     }
-
     .menuLinksCollapse{
         display: flex;
     }
+
+
+
+    #imgBg{
+        width: 130%;
+        transition: 1s;
+    }
+    .heroConteudo{
+        margin-left: -130%;
+    }
+    .heroConteudo h1{
+        font-size: 36px;
+    }
+    .heroConteudo p{
+        font-size: 22px;
+    }
+    .heroConteudo img{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 450px){
+
 }
