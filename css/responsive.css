@@ -1,0 +1,16 @@
+@media screen and (max-width: 650px){
+    #OtherMenu{
+        display: flex;
+    }
+
+    .menuLinks{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+
+    .menuLinksCollapse{
+        display: flex;
+    }
+}
