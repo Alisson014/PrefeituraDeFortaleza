@@ -1,3 +1,21 @@
+@media screen and (max-width: 850px){
+    .HeroInfo{
+        flex-direction: column;
+    }
+    .TextoInfo{
+        width: 80%;
+    }
+    .imagemInfo{
+        width: 80%;
+    }
+    #imgLeft{
+        display: none;
+    }
+    #imgRight{
+        display: flex;
+    }
+}
+
 @media screen and (max-width: 650px){
     #OtherMenu{
         display: flex;
@@ -16,10 +34,12 @@
 
     #imgBg{
         width: 130%;
+        height: 700px;
         transition: 1s;
     }
     .heroConteudo{
         margin-left: -130%;
+        height: 700px;
     }
     .heroConteudo h1{
         font-size: 36px;
@@ -30,8 +50,9 @@
     .heroConteudo img{
         width: 35%;
     }
-}
 
-@media screen and (max-width: 450px){
-
+    .TextoInfo h1{
+        font-size: 5.8vw;
+        line-height: 100%;
+    }
 }

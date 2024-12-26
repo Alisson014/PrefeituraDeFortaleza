@@ -53,11 +53,13 @@ body{
 .menuLinksCollapse{
     display: none;
     width: 100%;
-    padding-left: 3%;
+    text-indent: 3%;
     flex-direction: column;
     align-items: start;
     justify-content: start;
     height: fit-content;
+    border-top: 1px solid #0000005e;
+    padding-top: 10px;
     position: absolute;
     gap: 15px;
     top: 80px;
@@ -81,7 +83,7 @@ body{
 .menuLinks a, .menuLinksCollapse a{
     color: black;
     font-family: Roboto;
-     display: flex;
+    display: flex;
     flex-direction: column;
     /*justify-content: center;
     align-items: center; */
@@ -230,7 +232,7 @@ body{
     font-weight: lighter;
     text-shadow: 1px 2px 3px black;
 }
-.heroConteudo button{
+.Botao, .Botao2{
     background-color: #00a59a;
     color: white;
     font-size: 22px;
@@ -242,17 +244,61 @@ body{
     cursor: pointer;
     transition: 0.4s;
 }
-.heroConteudo button:hover{
+.Botao:hover{
     background-color: #005c56;
     border: 1px solid #005c56;
 }
-#herobutton2{
+.Botao2{
     background-color: transparent;
-    border: 1px solid rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(200, 200, 200, 0.7);
     transition: 0.4s;
 }
-#herobutton2:hover{
-    background-color: rgba(255, 255, 255, 0.8);
+.Botao2:hover{
+    background-color: rgba(200, 200, 200, 0.8);
     color: black;
     transition: 0.4s;
+}
+
+
+
+.HeroInfo{
+    width: 100%;
+    height: fit-content;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 40px;
+}
+
+.TextoInfo{
+    width: 40%;
+}
+.TextoInfo h1{
+    font-family: Roboto;
+    font-size: 4vw;
+    color: #000000ca;
+    line-height: 90%;
+    margin-bottom: 18px;
+}
+.TextoInfo p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 120%;
+    color: #0000008a;
+    font-weight: lighter;
+    margin-bottom: 18px;
+}
+.imagemInfo{
+    width: 40%;
+    
+}
+.imagemInfo img{
+    width: 100%;
+    border-radius: 8px;
+}
+#imgRight{
+    display: none;
 }
