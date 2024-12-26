@@ -302,3 +302,195 @@ body{
 #imgRight{
     display: none;
 }
+
+
+
+
+.DadosIMC{
+    background-color: #283535;
+    padding: 20px;
+    border-radius: 8px;
+    width: 25%;
+    z-index: 100;
+}
+.DadosIMC h1{
+    font-size: 2.5vw;
+    font-family: Roboto;
+    color: #12c0b4;
+}
+.DadosIMC strong{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.inputsIMC{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 10px;
+}
+.DadosIMC input{
+    padding: 8px;
+    font-size: 16px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 8px;
+    border: 2px solid #475e5e;
+}
+.DadosIMC label{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #97e2ddcc;
+    font-size: 18px;
+}
+#bf1, #bf2{
+    font-size: 19px;
+    padding: 6px 8px;
+}
+
+.ResultadoIMC{
+    background-color: #192424;
+    width: 40%;
+    height: 400px;
+    border-radius: 8px;
+    margin-left: -60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.Circurlo{
+    position: absolute;
+    padding: 20%;   
+    border-radius: 100%;
+    border-top: 4px solid #00a59a;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid transparent;
+    animation-name: aniR;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#c2{
+    padding: 22%;
+    animation-name: aniRreverse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes aniR{
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes aniRreverse{
+    to{
+        transform: rotate(-360deg);
+    }
+}
+.contentQuadrados{
+    width: 22%;
+    padding: 10px;
+    height: 120px;
+    position: relative;
+}
+.Quadrado{
+    padding: 25px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-color: #00a59a;
+    border-radius: 4px;
+    flex-shrink: 0;
+    animation-name: aniSq;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+#q1{
+    animation-delay: 0.5s;
+}
+#q2{
+    animation-delay: 1s;
+}
+#q3{
+    animation-delay: 1.5s;
+}
+#q4{
+    animation-delay: 2s;
+}
+
+
+@keyframes aniSq{
+    0%{
+        transform: translateX(0) translateY(0);
+    }
+    25%{
+        transform: translateX(90px) translateY(0);
+    }
+    50%{
+        transform: translateX(90px) translateY(90px);
+    }
+    75%{
+        transform: translateX(0) translateY(90px);
+    }
+    100%{
+        transform: translateX(0) translateY(0);
+    }
+}
+.ResultadoIMC h2{
+    position: absolute;
+    bottom: 30px;
+    color: #00a59a;
+    font-family: Roboto;
+    font-size: 20px;
+    animation-name: aniT;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    overflow: hidden;
+    width: 95px;
+}
+@keyframes aniT{
+    0%{
+        width: 95px;
+    }
+    25%{
+        width: 100px;
+    }
+    50%{
+        width: 105px;
+    }
+    75%{
+        width: 110px;
+    }
+    100%{
+        width: 95px;
+    }
+
+}
+
+.Imc{
+    color: #00a59a;
+    font-family: Roboto;
+    font-size: 4.8vw;
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 20px;
+    width: 70%;
+    height: 60%;
+    animation-name: aniImc;
+    animation-duration: 2s;
+    position: absolute;
+}
+@keyframes aniImc{
+    to{
+        transform: rotate(360deg) rotateY(360deg);
+    }
+}
+
+.sumir{
+    display: none;
+}
