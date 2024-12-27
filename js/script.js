@@ -173,3 +173,13 @@ function Redefirnir(){
     });
 
 }
+
+
+
+// Efect cards
+VanillaTilt.init(document.querySelectorAll(".card"), {
+    max: 25,
+    scale: 1.02,
+    speed: 300
+    
+});
