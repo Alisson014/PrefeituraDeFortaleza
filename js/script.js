@@ -183,3 +183,19 @@ VanillaTilt.init(document.querySelectorAll(".card"), {
     speed: 300
     
 });
+
+
+
+//Menu Footer
+var isFuntional = false;
+
+function ShowMenuFooter(){
+    isFuntional = !isFuntional;
+    var MenuFooter = document.querySelector(".OutrosLinksResponsive");
+    
+    if (isFuntional){
+        MenuFooter.classList.add("AparecerMenu");
+    } else{
+        MenuFooter.classList.remove("AparecerMenu");
+    }
+}
