@@ -160,8 +160,9 @@ function Redefirnir(){
 
     const pai = document.querySelector(".ResultadoIMC");
     var filhos = pai.childElementCount;
-    if (filhos > 4){
+    while (filhos > 4){
         pai.removeChild(document.querySelector(".Imc"));
+        var filhos = pai.childElementCount;
     }
 
     // 
