@@ -26,7 +26,19 @@ body{
     border-bottom: 1px solid #0000005e;
     filter: drop-shadow(0px 5px 50px black);
     z-index: 100000;
+
+    animation-name: aniNav;
+    animation-duration: .4s;
 }
+@keyframes aniNav{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
 .logo{
     width: 35%;
 }
@@ -216,6 +228,19 @@ body{
     transition: 1s;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #0000005e;
+    
+    animation-name: aniInitHero;
+    animation-duration: .8s;
+}
+@keyframes aniInitHero{
+    from{
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to{
+        opacity: 1.5;
+        transform: translateY(0);
+    }
 }
 .BgBlur{
     backdrop-filter: blur(20px);
@@ -281,6 +306,19 @@ body{
 
 .TextoInfo{
     width: 40%;
+
+    animation-name: aniHeroTexto;
+    animation-duration: .8s;
+}
+@keyframes aniHeroTexto{
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+        opacity: 1.5;
+        transform: translateX(0);
+    }
 }
 .TextoInfo h1{
     font-family: Roboto;
@@ -300,6 +338,18 @@ body{
 .imagemInfo{
     width: 40%;
     
+    animation-name: aniHeroImg;
+    animation-duration: .8s;
+}
+@keyframes aniHeroImg{
+    from{
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to{
+        opacity: 1.5;
+        transform: translateX(0);
+    }
 }
 .imagemInfo img{
     width: 100%;
@@ -318,11 +368,13 @@ body{
     justify-content: center;
     text-align: center;
     width: 100%;
-    
     padding: 40px 0px 40px 0px;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     flex-shrink: 0;
+
+    animation-name: aniInitHero;
+    animation-duration: .8s;
 }
 .ConteudoTexto i{
     font-size: 27px;
@@ -376,6 +428,9 @@ body{
     overflow: hidden;
     border-bottom: 1px solid #0000005e;
     border-top: 1px solid #0000005e;
+
+    animation-name: aniInitHero;
+    animation-duration: .8s;
 }
 .title img{
     width: 14%;
@@ -393,6 +448,9 @@ body{
     border-radius: 8px;
     width: 25%;
     z-index: 100;
+
+    animation-name: aniHeroTexto;
+    animation-duration: .8s;
 }
 .DadosIMC h1{
     font-size: 2.5vw;
@@ -439,6 +497,9 @@ body{
     justify-content: center;
     align-items: center;
     position: relative;
+
+    animation-name: aniHeroImg;
+    animation-duration: .8s;
 }
 .Circurlo{
     position: absolute;
@@ -583,6 +644,9 @@ body{
     text-align: center;
     font-size: 4vw;
     margin-bottom: 40px;
+
+    animation-name: aniInitHero;
+    animation-duration: .8s;
 }
 
 .Atividades{
@@ -606,6 +670,9 @@ body{
     filter: drop-shadow(1px 1px 4px black);
     background-color: white;
     transition: 1s;
+
+    animation-name: aniInitHero;
+    animation-duration: .8s;
 }
 .cabecalho{
     display: flex;
@@ -677,6 +744,9 @@ footer{
     padding-top: 80px;
     padding-bottom: 80px;
     gap: 30px;
+
+    animation-name: aniInitHero;
+    animation-duration: .8s;
 }
 .SobrePrefeitura{
     width: 28%;
@@ -888,7 +958,8 @@ footer hr{
     transform: scaleY(1);
     transform-origin: bottom;
 }
-.OutrosLinksResponsive .AparecerMenu a{
+.OutrosLinksResponsive
+.AparecerMenu a{
     visibility: visible;
 }
 .LastLine span{

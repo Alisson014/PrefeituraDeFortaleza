@@ -236,39 +236,15 @@ function Loop1(){
     if (isVisible(ConteinerComentarios)){
         ShowComentarios();
     }
-    console.log("teste");
+    
     setTimeout(() => {Loop2();}, intervalo);
 }
 function Loop2(){
     if (isVisible(ConteinerComentarios)){
         ShowComentarios();
     }
-    console.log("teste");
+    
     setTimeout(() => {Loop1();}, intervalo);
 }
 
 Loop1();
-
-
-
-
-
-
-// const observer = new IntersectionObserver(entries => {
-    
-    
-//     Array.from(entries).forEach(entry => {
-//         if (entry.isIntersecting){
-//             StartComentarios = true;
-//             Comecar();
-//         }
-//         else{
-//             StartComentarios = false;
-//         }
-//     });
-// });
-// // , {
-// //     threshold: 0.7
-// // }
-
-// observer.observe(document.querySelector(".ConteinerComentarios"));
