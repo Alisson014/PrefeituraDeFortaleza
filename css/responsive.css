@@ -40,7 +40,7 @@
     }
 
     .title{
-        font-size: 5vw;
+        font-size: 5.4vw;
     }
     .card{
         width: 40%;
@@ -117,9 +117,18 @@
         visibility: visible;
     }
 
+    .ConteudoTexto i{
+        font-size: 22px;
+    }
+    .ConteudoTexto i br{
+        display: none;
+    }
+    .ConteudoTexto p{
+        font-size: 20px;
+    }
 
     .title{
-        font-size: 5.5vw;
+        font-size: 5.8vw;
     }
     .card{
         width: 52%;
@@ -179,4 +188,8 @@
         gap: 10px;
     }
 
+    .title{
+        font-size: 9vw;
+        max-width: 90%;
+    }
 }
