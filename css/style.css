@@ -318,10 +318,11 @@ body{
     justify-content: center;
     text-align: center;
     width: 100%;
-    height: fit-content;
+    
     padding: 40px 0px 40px 0px;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
+    flex-shrink: 0;
 }
 .ConteudoTexto i{
     font-size: 27px;
@@ -357,6 +358,34 @@ body{
 .top-right{
     right: 4%;
 }
+.ConteudoTexto span{
+    font-size: 18px;
+    margin-top: 8px;
+    color: #00000088;
+}
+
+
+
+.ConteinerComentarios{
+    display: flex;
+    justify-content: start;
+    align-items: stretch;
+    width: 90%;
+    height: 300px;
+    margin-left: 5%;
+    overflow: hidden;
+    border-bottom: 1px solid #0000005e;
+    border-top: 1px solid #0000005e;
+}
+.title img{
+    width: 14%;
+}
+.coment{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 .DadosIMC{
     background-color: #283535;
